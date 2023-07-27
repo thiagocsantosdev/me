@@ -1,0 +1,156 @@
+/* Reseta o css */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+    
+}
+
+/* Define variaveis */
+
+:root{
+    --high-color:rgb(241, 67, 105);
+  }
+
+/* Estiliza o cabeçalho */
+
+body{
+    width: 100vw;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+header{
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 1.2rem;
+}
+
+.logo span{
+    color: var(--high-color);
+    border-bottom: 4px solid var(--high-color);
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+header nav ul li {
+    color: gray;
+    border-bottom: 1px solid #1f1f1f;
+    transition: 600ms;
+    cursor: pointer;
+}
+header nav ul li:hover {
+    color: var(--high-color);
+    border-bottom: 1px solid var(--high-color);
+    
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome span{
+    color: var(--high-color);
+}
+
+
+.welcome h2{
+   font-size: 6rem;
+}
+
+
+/*  SECTION ABOUT ME */
+
+
+.about-me{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+}
+
+.about-me img{
+    width: 250px;
+    border-radius: 50%;
+}
+
+.cards-container{
+    width: 90w;
+    display: flex;
+    gap: 4vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards-about-me{
+    border: 2px solid var(--high-color);
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+    text-align: justify;
+    padding:15px;
+}
+
+.cards-about-me h4{
+    text-align: center;
+    padding: 20px;
+}
+
+.cards-about-me span{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/* Resposive Smartphones */
+
+
+@media only screen and (max-width: 860px){
+    
+    .welcome h2{
+        font-size: 4rem;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    
+    .welcome h2{
+        font-size: 3rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+}
+
